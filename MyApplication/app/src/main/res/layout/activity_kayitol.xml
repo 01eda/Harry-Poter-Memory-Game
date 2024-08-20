@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5E0707"
+    tools:context=".kayitol">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="todo"
+            android:src="@drawable/logo" />
+
+
+        <EditText
+            android:id="@+id/PostaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userbackground"
+            android:drawablePadding="10dp"
+            android:hint="e_posta"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#0C0C0A"
+            android:autofillHints=""
+            android:inputType="" />
+
+        <EditText
+            android:id="@+id/PersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:autofillHints=""
+            android:background="@drawable/userbackground"
+            android:drawablePadding="10dp"
+            android:hint="kullaniciadi"
+            android:inputType=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#0C0C0A" />
+
+        <EditText
+            android:id="@+id/personsifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/userbackground"
+            android:drawablePadding="10dp"
+            android:hint="sifre"
+
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="#070603"
+            android:inputType=""
+            android:autofillHints="" />
+
+
+
+        <Button
+            android:id="@+id/kaydolbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Kaydet"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/geributton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/buttonbackground"
+            android:text="Geri"
+            android:textAllCaps="false"
+            android:textSize="21sp" />
+
+    </LinearLayout>
+</RelativeLayout>
